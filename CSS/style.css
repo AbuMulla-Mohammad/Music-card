@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+
+*{
+    border-radius: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    
+
+}
+
+.continer{
+   
+    background-color: #eee;
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "header header header header header header header header header header header header"
+    "l-side l-side main main main main main main main main r-side r-side";
+}
+header{
+    padding-left:30px ;
+    padding-right: 30px;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: gray;
+    font-weight: 700;
+}
+header ul{
+    
+    display:flex;
+    display: flex;
+    float: right;
+}
+header ul li{
+    list-style: none;
+    color: gray;
+    margin: 20px;
+    position: relative;
+    padding-left: 10px;
+}
+.prof-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    top: -10px;
+    
+}
+.notif{
+
+    position: relative;
+}
+.notif::after{
+    content: "9";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    
+
+}
+
+
+
+
+.left-side{
+
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: gray;
+    grid-area:l-side;
+    padding-left: 30px;
+    margin-left: -40px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.left-side li{
+    list-style: none;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.explore{
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    padding-top:8px;
+    color: white;
+    background-color: rgb(2, 131, 2);
+    box-shadow: -13px -12px 20px white, 10px 17px 40px #b8b6b6;
+}
+.not-social-li{
+    color: #1196f5;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: inherit;
+    box-shadow: -13px -12px 20px white, 10px 17px 40px #b8b6b6;
+
+}
+.social li{
+    width: 40px;
+    height: 40px;
+    margin-left: 120px;
+    font-size: 20px;
+    color: white;
+    
+    
+}
+.insta{
+    background-color:  #ec4a63;
+}
+.sound{
+    background-color:#ff7800 ;
+}
+.fa{
+    background-color:  #1196f5;
+}
+
+.right-side{
+
+    grid-area: r-side;
+}
+
+
+
+
+
+/* section */
+section{
+    color: rgb(41, 1, 1);
+    grid-area: main;
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "det img img" "mu-card pl-1 pl2";
+    grid-gap: 40px;
+    grid-row-gap: 0px;
+}
+.song-det{
+    grid-area:det ;
+}
+.songtitle{
+    font-size: 60px;
+    color: rgb(41, 1, 1);
+    font-weight:bold;
+}
+.img{
+    grid-area:img;
+    border-radius:28% 84% 44% 51% / 29% 28% 86% 70%; ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+    
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.733), white) ;
+    
+}
+
+.my-img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+.outline{
+    margin-top: 200px;
+    background-color: rgb(190, 190, 190);
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.outline::after{
+    content: '';
+    background-image: url(../IMAGES/play.jpg);
+    background-size: cover;
+    width: 20%;
+    height: 20%;
+    z-index: 9999;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50%;
+}
+.music-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius:30px ;
+    box-shadow: -13px -12px 20px white, 10px 17px 92px #b8b6b6;
+}
+.music-cover img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.wave-img{
+    width: 40%;
+    height: 10%;
+}
+.playlist-1 {
+    line-height: 25px;
+    height: 80%;
+    margin-top:20%;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Roboto';
+    color: rgb(41, 1, 1);
+    align-items: center;
+    border-radius:30px ;
+    box-shadow: -15px -11px 25px white, 4px 7px 26px #b8b6b6;
+}
+.playlist-1 h1{
+    font-size: 40px;
+}
+.img .music-cover{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+}
+.file-div{
+    margin-top: 10px;
+    margin-left: -40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.file{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: inherit;
+    width: 30px;
+    height: 30px;
+    box-shadow:  4px 4px 5px rgba(0, 0, 0, 0.5),
+    -4px -4px 5px white;
+}
+
+
+/* right side */
+.right-side{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    
+    /* justify-content: center; */
+}
+.downloading{
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    padding: 10px;
+    box-shadow: -12px -8px 12px white, 1px 1px 30px #b8b6b6;
+
+}
+.right-side .song-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    
+}
+
+.downloading-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloading-state{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    outline: 2px solid gray;
+}
